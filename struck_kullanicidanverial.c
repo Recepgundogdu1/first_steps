@@ -24,5 +24,27 @@ void sorusor() {
 
 int main() {
     sorusor();
+
+    struct sirket nesne;
+
+    printf("\nLutfen personel isim giriniz: ");
+    scanf("%s", nesne.isim);
+
+    printf("Lutfen personel soyisim giriniz: ");
+    scanf("%s", nesne.soyisim);
+
+    printf("Lutfen personel yasi giriniz: ");
+    scanf("%d", &nesne.yas);
+
+    printf("Lutfen personel maasi giriniz: ");
+    scanf("%d", &nesne.maas);
+
+    printf("Lutfen personel sehri giriniz: ");
+    scanf("%s", nesne.sehir);
+
+    printf("\n--- IKINCI PERSONEL BILGILERI ---\n");
+    printf("Isim: %s | Soyisim: %s | Yas: %d | Maas: %d | Sehir: %s\n",
+           nesne.isim, nesne.soyisim, nesne.yas, nesne.maas, nesne.sehir);
+
     return 0;
 }
